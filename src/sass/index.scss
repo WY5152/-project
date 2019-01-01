@@ -109,6 +109,8 @@ header{
     width:448px;
     height:38px;
     border:1px solid #2496d5;
+    position:relative;
+    z-index:-1000;
 }
 #btn{
     height:40px;
@@ -116,9 +118,12 @@ header{
     color:#fff;
     background:#2496d5;
     font-size:16px; 
+    position:relative;
+    z-index:-1000;
 }
 #btn span{
-  
+   position: absolute;
+    z-index:-1000;
     font-size:13px;
 }
 .bd-me-ul-1{
@@ -456,6 +461,8 @@ header{
 .list-hot-tow-1 li img{
     padding-left:10px;
     padding-top:16px;
+    width:83px;
+    height:83px;
 }
 .list-hot-tow-2 li{
     margin:0 0 35px 10px;

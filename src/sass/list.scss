@@ -1,0 +1,162 @@
+@import 'public';
+header{
+    width:$width;
+    height:36px;
+    border:1px solid #e5e5e5;
+    background:#f5f5f5;
+    margin:$margin;
+}
+.left{
+    height:36px;
+    width:500px;
+    float:left;
+}
+.left li{
+    float:left;
+    margin-left:13px;
+    font-size:14px;
+    line-height:36px;
+}
+.right{
+    height:36px;
+    width:700px;
+    float:left;
+}
+.right ul li{
+    margin-left:40px;
+    margin-right:5px;
+    font-size:14px;
+    width:80px;
+    float:right;
+    text-align:center;
+    line-height:36px;
+}
+.right-div {
+    display:none;
+}
+.right li:hover .right-div {
+    display:block;
+    border:1px solid #e5e5e5;
+    background:#ffffff;
+}
+.right-nav{
+    height:330px;
+    background:#ffffff;
+    width:$width;
+}
+.right-nav {
+    display:none;
+}
+.right li:hover .right-nav {
+    display:block;
+    border:1px solid #e5e5e5;
+    background:#ffffff;
+    position:absolute;
+    left:72px;
+}
+.right-nav h3 .a{
+    color:slateblue;
+}
+.rt-nav-1,.rt-nav-2,.rt-nav-3,.rt-nav-4{
+    float:left;
+    height:300px;
+}
+.rt-nav-1{
+    width:600px;
+    border-right:1px solid silver
+}
+.rt-nav-2{
+    width:200px;
+    border-right:1px solid silver
+}
+.rt-nav-3{
+    width:205px;
+    border-right:1px solid silver
+}
+.rt-nav-4{
+    width:206px;
+   
+}
+.rt-nav-1 p a{
+    margin-left:20px;
+    margin-right:20px;
+    font-size:12px;
+}
+.rt-nav-2 p a{
+    margin-left:4px;
+    margin-right:4px;
+    font-size:12px;
+}
+.rt-nav-1 p a:hover {
+    background:blue;
+    color:#ffffff;
+}
+//2 右侧
+.blend{
+    margin-left:73px;
+}
+.blend-lt{
+    width:251px;
+    float:left;
+}
+.blend-me{
+    width:622px;
+    float:left;
+    padding-top:34px;
+}
+//有问题覆盖 搜索框
+#txt{
+    width:448px;
+    height:38px;
+    border:1px solid #2496d5;
+}
+#btn{
+    height:40px;
+    width:100px;
+    color:#fff;
+    background:#2496d5;
+    font-size:16px; 
+}
+#btn span{
+    font-size:13px;
+}
+.bd-me-ul-1{
+    width:300px;
+}
+.bd-me-ul-1 li{
+    float:left;
+    margin:2px 2px;
+    width:55px;
+}
+.blend-rt{
+    width:339px;
+    float:left;
+}
+.blend-rt p{
+    display:inline-block;
+    width:100px;
+    height:27px;
+    border:1px solid silver;
+    margin-left:2px;
+    margin-right:2px;
+    margin-top:40px;
+    position:relateive;
+    z-index:100;
+}
+.blend-rt p a{
+    padding-left:10px;
+    line-height:27px;
+}
+
+.blend-lt p:nth-of-type(1) a{
+    color:#2496d5;
+    font-size:51px;
+}
+.blend-lt span{
+    font-size:13px;
+    color:#3f9941;
+}
+.blend-lt a p{
+    color:#2496d5;
+}
+

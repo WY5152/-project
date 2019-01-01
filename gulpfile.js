@@ -22,6 +22,11 @@ gulp.task('img',function(){
     .pipe(imagemin())
     .pipe(gulp.dest('./dist/img'))
 })
+gulp.task('img',function(){
+    gulp.src('./src/img/img2/*.*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./dist/img'))
+})
 gulp.task('default',function(){
     gulp.watch('./src/sass/*.scss',['sass']);
     gulp.watch('./src/js/*.js',['js']);
