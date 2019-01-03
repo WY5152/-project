@@ -13,20 +13,41 @@
     </style>
 </head>
 <body>
-  <div class="box">
-      <div class="top clearfloat">
-        <p>
-            <i>健客</i>
-            <span>买正品药上健客</span>
-            <span>做最值得信赖的健康服务平台</span>
-          </p>  
-        <p class="p">jianke.com</p>
-        <div>
-             <p>如已注册，点此</p><a href="register.html"> <input type="button"name="btn"value="登录"id="btn"></a> 
+    <div id="logo" class="clearfloat">
+        <p><i>健客</i> <span>做最值得的健康服务平台</span></p> 
+        <div><span>如已注册点此 </span><a href="register.html">登录</a></div>
+    </div>
+    <div id="box">
+        <ul>
+            <li><span>使用邮箱/手机注册</span></li>
+            <li><span>设置用户信息</span></li>
+            <li><span>注册成功</span></li>
+        </ul>
+        <div id="zhu">
+            <div class="zhanghao">
+                <span class="span01">手机/邮箱&nbsp;:&nbsp;</span>
+                <input type="text" name="" id="txt_name" value="" placeholder="手机/邮箱"/>
+                <span class="span02">中文、字母、数字、下划线的组合,3到12位</span>
+            </div>
+            <div class="mima">
+                <span class="span01">密码&nbsp;:&nbsp;</span>
+                <input type="text" name="" id="txt_pwsd" value="" placeholder="密码"/>
+                <span class="span02">字母、数字、下划线，6到12位</span>
+            </div>
+            <div class="xuanze">
+                <input type="checkbox" name="" id="" value="" />
+                <span class="span03">已阅读并同意</span>
+                <a href="">《多商分销系统用户服务协议》</a>
+            </div>
+            <h3>
+                <input type="button" id="registor" value="注册" />
+                <input type="button" id="login" value="登录" />
+            </h3>
         </div>
-      </div>
-      <div class="bottom">
-      </div>
-  </div>
+    </div>
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../js/sign-in.js.js" ></script>
+
 </body>
 </html>

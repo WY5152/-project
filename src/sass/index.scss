@@ -33,6 +33,19 @@ header{
 }
 .right-div {
     display:none;
+    position:relative;
+}
+.right-div div{
+    position:absolute;
+    z-index:100;
+    left:8px;
+}
+.right-div div:nth-of-type(2){
+    top:20px;
+}
+.right-div div:nth-of-type(3){
+    top:40px;
+    
 }
 .right li:hover .right-div {
     display:block;
@@ -104,13 +117,10 @@ header{
     float:left;
     padding-top:34px;
 }
-//有问题覆盖 搜索框
 #txt{
     width:448px;
     height:38px;
     border:1px solid #2496d5;
-    position:relative;
-    z-index:-1000;
 }
 #btn{
     height:40px;
@@ -118,12 +128,8 @@ header{
     color:#fff;
     background:#2496d5;
     font-size:16px; 
-    position:relative;
-    z-index:-1000;
 }
 #btn span{
-   position: absolute;
-    z-index:-1000;
     font-size:13px;
 }
 .bd-me-ul-1{
@@ -254,7 +260,7 @@ header{
     color:#000;
     margin-top:10px;
 }
-//轮播图
+
 .banner{
     // margin:$margin;
     position:absolute;
@@ -282,45 +288,91 @@ header{
    margin-left:67px;
     float:left;
  }
-.banner ul{
-   overflow:hidden;
-    position:absolute;
+ //轮播图
+// .banner ul{
+//     position:relative;
+//     margin:$margin;
+//     width:810px;
+//     left:270px;
+// }
+// .banner li{
+//     position:absolute;
+// }
+
+ .banner ul,ol,li{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+ .banner{
+    position: relative;
     margin:$margin;
     width:810px;
-    left:270px;
-   float:left;
+    float:left;
 }
-.banner ul li:nth-of-type(2){
-    position:absolute;
-    background:#000;
-    opacity:0.4;
-    color:#fff;
-    
-    // bottom:20px;
-    width:70px;
-    height:36px;
-    border:1px solid #fff;
-     bottom:11px;
+ .banner #msg{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 10px;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	color: white;
+	font-size: 16px;
+	background: rgba(0,0,0,.8);
+	cursor: pointer;
+	z-index: 1;
 }
-//有问题
-// .banner ul:nth-of-type(1)li:nth-of-type(2){
-//     margin-left:189px;
-// }
-// .banner ul:nth-of-type(2)li:nth-of-type(2){
-//     left:261px;
-// }
-// .banner ul:nth-of-type(3)li:nth-of-type(2){
-//     left:333px;
-// }
-// .banner ul:nth-of-type(4)li:nth-of-type(2){
-//     left:405px;
-// }
-// .banner ul:nth-of-type(5)li:nth-of-type(2){
-//     left:477px;
-// }
-// .banner ul:nth-of-type(6)li:nth-of-type(2){
-//     left:549px;
-// }
+ .br-ul-1 li a {
+	display: block;
+}
+.banner ol{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	background: rgba(255,255,255,.6);
+	border-radius: 7px;
+	padding: 3px;
+	z-index: 2;
+}
+.banner ol li{
+    background: #000;
+     opacity:0.7;
+	float: left;
+	width: 50px;
+	height: 28px;
+	margin-left: 5px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	margin-right: 7px;
+}
+.banner span{
+	width: 30px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 40px;
+	color: white;
+	background: rgba(255,255,255,.3);
+	cursor: pointer;
+	position: absolute;
+	font-weight: bold;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	-moz-transform:translateY(-50%);
+	-webkit-transition: all 1s ease 0s;
+}
+.banner #rtBtn{
+	right: 0;
+	left: auto;
+}
+ span:hover{
+	-webkit-transform: rotateY(40deg) translateX(-3px) scale(1.2);
+}
+
+
 //banner右侧
 .banner-nav .br-hot-rt{
     width:202px;
@@ -760,6 +812,16 @@ header{
 .p-1{
     font-weight: bold;
 }
+.p-2{
+    color:#2496d5;
+}
+.p-3{
+    color:#2496d5;
+}
+.ft p i{
+    color:#2496d5;
+    
+}
 .footer-fr{
     width:100%;
     height:225px;
@@ -769,5 +831,12 @@ header{
     color:#000;
     text-align:center;
     line-height:30px;
-    
+}
+.footer-fr div{
+    margin-left:420px;
+    width:$width;
+}
+.footer-fr img{
+    float:left;
+
 }

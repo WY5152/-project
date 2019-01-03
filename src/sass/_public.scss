@@ -35,3 +35,8 @@ $margin:0 auto;
 html,body{
     width:100%;
 }
+@mixin whb($width,$height,$background){
+    width:$width;
+    height:$height;
+    background:$background;
+}
