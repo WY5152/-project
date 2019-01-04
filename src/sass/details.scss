@@ -362,11 +362,13 @@ aside .big_pic img {
     position:absolute;
     left:568px;
     top:410px;
+    z-index: -1;
 }
 .section-5{
     position:absolute;
-    left:535px;
+    left:575px;
     top:440px;
+    z-index:-1;
 }
 .section-2-li-9 ul li{
     float:left;
