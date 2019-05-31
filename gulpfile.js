@@ -27,3 +27,6 @@ gulp.task('default',function(){
     gulp.watch('./src/js/*.js',['js']);
     gulp.watch('./src/img/*.*',['img']);
 })
+
+//cnpm  install --save-dev   gulp-sass;
+//cnpm install  --save-dev gulp@3;
